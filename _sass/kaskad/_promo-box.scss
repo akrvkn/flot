@@ -1,0 +1,27 @@
+.promo-box h3, .promo-box p {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* coloured cutoff */
+.promo-box {
+  background-attachment: scroll, scroll, fixed;
+  background-color: rgba(185,213,250,0.5);
+  background-image: url(images/contours-opaque.png), url(images/gridlines-opaque.png), url(images/ship.png);
+  background-repeat: repeat, repeat, no-repeat;
+  background-size: auto, auto, cover;
+}
+/* extra padding at the cutoffs */
+.promo-box {
+  padding: 3em 0;
+  margin-top: 3em;
+}
+
+.promo-box {
+  margin-top: 0;
+}
+.promo-box p {
+  margin-bottom: 0;
+}

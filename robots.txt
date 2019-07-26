@@ -1,0 +1,10 @@
+User-agent: Yandex
+Disallow: /*assets
+
+Host: https://www.flot.su
+
+User-agent: Googlebot
+Disallow: /*assets
+
+User-agent: *
+

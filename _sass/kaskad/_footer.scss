@@ -1,0 +1,98 @@
+/* main footer */
+footer {
+  clear: both;
+  padding: 3em 10%;
+  color: #fff;
+  background: $background-color-3;
+  text-align: center;
+}
+footer a {
+  display: inline-block;
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  padding: 40px 0 0 0;
+  margin: 0 0.5em;
+  position: relative;
+  color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
+  -moz-transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
+  transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
+}
+footer a:hover, footer a:focus {
+  color: rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+}
+footer a:visited {
+  color: rgba(255, 255, 255, 0.2);
+}
+footer a::before {
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  overflow: visible;
+  font-size: 36px;
+  text-indent: 0;
+
+  /* icomoon.io defaults */
+  font-family: 'verdemoderna';
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+footer a.zen-validate-html::before {content: "5";}
+footer a.zen-validate-html:hover::before, footer a.zen-validate-html:focus::before {content: "%";}
+footer a.zen-validate-css::before {content: "3";}
+footer a.zen-validate-css:hover::before, footer a.zen-validate-css:focus::before {content: "#";}
+footer a.zen-license::before {content: "c";}
+footer a.zen-license:hover::before, footer a.zen-license:focus::before {content: "C";}
+footer a.zen-accessibility::before {content: "a";}
+footer a.zen-accessibility:hover::before, footer a.zen-accessibility:focus::before {content: "A";}
+footer a.zen-github::before {content: "g";}
+footer a.zen-github:hover::before, footer a.zen-github:focus::before {content: "G";}
+
+/* footer widgets */
+.footer-widgets p {
+  padding-bottom: 2em;
+}
+.footer-widgets {
+  float: none;
+  clear: both;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+.footer-widgets a {
+  text-decoration: none;
+}
+.footer-widgets a:hover, .footer-widgets a:focus {
+  text-decoration: underline;
+}
+.footer-widgets h3 {
+  padding-top: 0;
+}
+.footer-widgets p {
+  width: auto;
+  padding: 1em 12%;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.4);
+  background: #3e5d67;
+
+  background-attachment: fixed, fixed, fixed, scroll;
+  background-image: url(images/contours.png), url(images/gridlines.png), url(images/noise.png), url(images/ocean.jpg);
+  background-position: 0 0, -5px -25px, 0 0, 0 50%;
+  background-repeat: repeat, repeat, repeat, no-repeat;
+  background-size: auto, auto, auto, cover;
+
+  font-size: 2em;
+  font-style: italic;
+  text-align: center;
+}
+.footer-widgets p a {
+  color: rgba(255, 255, 255, 0.7);
+  font-style: normal;
+}

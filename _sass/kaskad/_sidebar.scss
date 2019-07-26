@@ -1,0 +1,102 @@
+/* sidebar base styles */
+.sidebar {
+  background: $background-color-4;
+  & ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    overflow: hidden;
+  }
+  & a {
+    color: $text-color-2;
+    text-decoration: none;
+    &:hover, &:focus {
+      color: $text-color-9;
+    }
+  }
+}
+
+/* shared sidebar styling */
+.zen-resources {
+  overflow: hidden;
+  background-color: rgba(138,188,159,0.5);
+  background-image: url(images/bamboo.png);
+
+  ul {
+    margin: 0;
+  }
+  & a {
+    display: block;
+    margin-bottom: 0.25em;
+    font-family: 'Poiret One', cursive;
+    font-size: 1.2em;
+    font-style: normal;
+    text-transform: uppercase;
+  }
+  & li {
+    float: left;
+    width: 50%;
+    padding: 1.5em 10%;
+    border-bottom: solid 1px #67a6fa;
+    color: #67a6fa;
+    font-style: italic;
+    &:nth-child(2n+1) {
+      clear: left;
+    }
+
+  }
+}
+
+
+  /* shared sidebar styling */
+  .design-selection {
+    ul {
+      margin: 0;
+    }
+    li {
+      float: left;
+      width: 50%;
+      padding: 1.5em 10%;
+      border-bottom: solid 1px #cbdffa;
+      color: #cbdffa;
+      font-style: italic;
+      &:hover, &:focus {
+        background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(50%, rgba(255, 255, 255, 0.5)), color-stop(100%, rgba(255, 255, 255, 0))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%); /* IE10+ */
+        background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%); /* W3C */
+      }
+      &:nth-child(2n+1) {
+        clear: left;
+      }
+    }
+    & .design-name {
+      display: block;
+      margin-bottom: 0.25em;
+      font-family: 'Poiret One', cursive;
+      font-size: 1.2em;
+      font-style: normal;
+      text-transform: uppercase;
+    }
+    & .designer-name {
+      color: #616857;
+      font-size: 0.9em;
+      font-style: normal;
+    }
+  }
+
+
+  /* resources */
+  .zen-resources li {
+    border-bottom: solid 1px #b9d5fa;
+    font-style: normal;
+  }
+  .zen-resources li:last-child {
+    float: none;
+    width: auto;
+    border-bottom: solid 1px #b9d5fa;
+  }
+
+

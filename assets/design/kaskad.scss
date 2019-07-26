@@ -1,0 +1,79 @@
+---
+#w3dom.com
+---
+/* fonts */
+@font-face {
+  font-family: 'Conv_Montserrat-Regular';
+  src: url('fonts/Montserrat-Regular.eot');
+  src: local('☺'), url('fonts/Montserrat-Regular.woff') format('woff'), url('fonts/Montserrat-Regular.ttf') format('truetype'), url('fonts/Montserrat-Regular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Poiret One';
+  src: url('fonts/PoiretOne-Regular.eot');
+  src: local('☺'), url('fonts/PoiretOne-Regular.woff') format('woff'), url('fonts/PoiretOne-Regular.ttf') format('truetype'), url('fonts/PoiretOne-Regular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* icon fonts */
+@font-face {
+  font-family: 'verdemoderna';
+  src: url('fonts/verdemoderna.eot');
+  src: url('fonts/verdemoderna.eot?#iefix') format('embedded-opentype'),
+  url('fonts/verdemoderna.woff') format('woff'),
+  url('fonts/verdemoderna.ttf') format('truetype'),
+  url('fonts/verdemoderna.svg#verdemoderna') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$base-font-family:'Conv_Montserrat-Regular', sans-serif !default;
+
+$background-color-1: #004d99;
+$background-color-2: #3e5d67;
+$background-color-3: #004d99;
+$background-color-4: #eaf3f6;
+
+$text-color-1: #00386f;
+$text-color-2: #0f4f8d;
+$text-color-3: #c0cac3;
+$text-color-4: #000;
+$text-color-5: #004181;
+$text-color-6: #616857;
+$text-color-7: #0d8ba1;
+$text-color-8: #0c4072;
+$text-color-9: #0599c2;
+$text-color-10: #fff;
+$text-color-11: #1e73be;
+
+$on-palm:          768px !default;
+$on-smart:         576px !default;
+$on-phone:         320px !default;
+$on-tablet:        992px !default;
+$on-laptop:        1200px !default;
+
+
+@mixin media-query-low($device) {
+  @media only screen and (max-width: $device) {
+    @content;
+  }
+}
+
+@mixin media-query-mid($device1, $device2) {
+  @media only screen and (min-width: $device1) and (max-width: $device2) {
+    @content;
+  }
+}
+
+@mixin media-query-high($device) {
+  @media only screen and (min-width: $device) {
+    @content;
+  }
+}
+
+
+// Import partials.
+@import "kaskad/base",
+"kaskad/layout";
