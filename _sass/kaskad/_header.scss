@@ -1,11 +1,11 @@
 .site-header {
   height: 230px;
-  background: $background-color-1 50% 0 url(images/flot-top1.jpg) no-repeat; /* old IE fallback */
+  background: $background-color-1 50% 0 url(images/ship4.jpg) no-repeat; /* old IE fallback */
   background-attachment: fixed, fixed, fixed, scroll;
-  background-image: url(images/contours.png), url(images/noise.png), url(images/gridlines.png), url(images/flot-top1.jpg);
+  background-image: url(images/contours.png), url(images/noise.png), url(images/gridlines.png), url(images/ship4.jpg);
   background-position: 0 0, 0 0, -5px -25px, 0 50%;
   background-repeat: repeat, repeat, repeat, no-repeat;
-  background-size: auto, auto, auto, cover;
+  background-size: auto, auto, auto, 100% 310px;
   text-align: center;
   align-items: flex-end;
 }

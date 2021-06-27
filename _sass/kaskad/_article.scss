@@ -5,6 +5,25 @@
   padding-bottom: 2em;
 }
 
+.w3-article img {
+  display:block;
+  width:100%;
+  height: auto;
+  margin-bottom: 20px
+}
+
+.front-page .w3-article img {
+  width: 150px;
+}
+
+.front-page .w3-article hr{
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ededed;
+  margin: 1em 0;
+  padding: 0;
+}
 
 /* w3-article block links -- download HTML/CSS */
 .w3-article a, .w3-article a:visited {
