@@ -25,5 +25,8 @@ sass:
 collections:
     front-page:
         output: true
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
 
 
