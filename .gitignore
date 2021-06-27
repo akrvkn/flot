@@ -1,7 +1,5 @@
 .idea/
 .sass-cache
 _site
-*.php
-src
 .DS_Store
 Gemfile.lock
