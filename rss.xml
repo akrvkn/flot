@@ -12,7 +12,9 @@ layout: none
     <link>{{ site.link }}</link>
     <description>{{ site.description }}</description>
     <language>ru</language>
-    {% for post in site.posts %}
+    {% for cat in site.categories %}
+    {% if cat[0] == 'news' %}
+    {% for post in cat[1] limit: 10 %}
     {% unless post.draft %}
     <item turbo="true">
         <title>{{ post.title }}</title>
@@ -23,11 +25,13 @@ layout: none
 
         <turbo:content>
             <![CDATA[
-            {{ post.excerpt  }}
+            {{ post.content  }}
             ]]>
         </turbo:content>
     </item>
     {% endunless %}
+    {% endfor %}
+    {% endif %}
     {% endfor %}
 </channel>
 </rss>
