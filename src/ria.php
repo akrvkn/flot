@@ -44,7 +44,7 @@ if(preg_match("|200|", $Headers[0])) {
 }
 $uri_arr = explode('.', $image1);
 $ext = end($uri_arr);
-$img = '<img alt="'.$titleMatch[1].'"  src="data:image/jpeg;base64,'.base64_encode($img_data).'">';
+$img = '<img alt="Новости флота"  src="data:image/'.$ext.';base64,'.base64_encode($img_data).'">';
 
 foreach($txtArr[1] as $par){
 preg_match($stopWords, $par, $res);
