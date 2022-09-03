@@ -1,7 +1,0 @@
-Configuration file: /home/korovkin/github/flot/_config.yml
-            Source: /home/korovkin/github/flot
-       Destination: /home/korovkin/github/flot/_site
- Incremental build: disabled. Enable with --incremental
-      Generating... 
-                    done in 0.406 seconds.
- Auto-regeneration: disabled. Use --watch to enable.
